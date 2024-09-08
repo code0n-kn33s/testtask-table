@@ -1,0 +1,7 @@
+export * from './Devices/carousel'
+export * from './Devices/card'
+export * from './Devices/cardRozborka'
+export * from './Type/tabs'
+export * from './Motos/upload'
+export {default as VerticalTabs} from './Motos/verticalTabsMoto'
+export {default as VerticalTabsModels} from './Motos/verticalTabsModels'

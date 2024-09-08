@@ -1,0 +1,35 @@
+@mixin adaptiv-font($pcFontSize, $mobFontSize) {
+	$addSize: $pcFontSize - $mobFontSize;
+	$addMobSize: $addSize + $addSize * 0.7;
+	@media (max-width: 749px) {
+		font-size: calc(#{$mobFontSize + px} + #{$addMobSize} * ((100vw - 375px) / #{$container-width}));
+	}
+	@media (min-width: 750px) {
+		font-size: calc(#{$mobFontSize + px} + #{$addSize} * (100vw / #{$container-width}));
+	}
+	@media (min-width: #{$container-width}px) {
+		font-size: #{$pcFontSize}px;
+	}
+}
+
+
+@mixin media-query($media-query) {
+	$breakpoint-found: false;
+
+	@each $breakpoint in $breakpoints {
+		$name: nth($breakpoint, 1);
+		$declaration: nth($breakpoint, 2);
+
+		@if $media-query == $name and $declaration {
+			$breakpoint-found: true;
+
+			@media only screen and #{$declaration} {
+				@content;
+			}
+		}
+	}
+
+	@if $breakpoint-found == false {
+		@warn 'Breakpoint "#{$media-query}" does not exist';
+	}
+}

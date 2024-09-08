@@ -1,0 +1,107 @@
+//Colors
+$primary-color: #fffffe;
+$secondary-color: #f08d42;
+$alternative-color: #000;
+$primary-hover-color: #FFA500;
+$primary-error-color: #FF0000;
+$primary-border-color: #FFF831;
+
+//Background Colors
+$primary-bg-color: #000;
+$secondary-bg-color: #FFF831;
+
+//Fonts
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Rubik', sans-serif;
+$alternative-font: 'PT Mono', monospace;
+$icon-font: 'Font Awesome', sans-serif;
+
+//Sizes
+$container-width: 1280px;
+$content-small-wrapper: 630px;
+$content-medium-wrapper: 978px;
+$main-border: 1px solid $primary-border-color;
+$main-border-radius: 10px;
+
+//Font Sizes
+$primary-font-size: 14px;
+$font-size-1: 30px;
+$font-size-2: 26px;
+$font-size-3: 24px;
+$font-size-4: 18px;
+$font-size-5: 16px;
+$font-size-6: 15px;
+$font-size-7: 13px;
+$font-size-8: 12px;
+$font-size-9: 10px;
+$font-size-10: 5px;
+
+//Additional variables
+$transition-duration: 0.3s;
+
+/*============================================================================
+  Grid Breakpoints and Class Names
+    - Do not change the variable names
+==============================================================================*/
+$grid-extra-small: 400px;
+$grid-medium: 768px;
+$grid-large: 990px;
+$grid-extra-large: 1200px;
+$grid-widescreen: 1440px;
+$grid-extra-widescreen: 1600px;
+
+$extra-small: 'extra-small';
+$small: 'small';
+$small-up: 'small-up';
+$small-mid: 'small-mid';
+$medium: 'medium';
+$medium-mid: 'medium-mid';
+$medium-down: 'medium-down';
+$medium-up: 'medium-up';
+$large: 'large';
+$large-down: 'large-down';
+$large-up: 'large-up';
+$extra-large: 'extra-large';
+$extra-large-down: 'extra-large-down';
+$extra-large-up: 'extra-large-up';
+$widescreen: 'widescreen';
+$extra-widescreen: 'extra-widescreen';
+
+$w1500: 'w1500';
+$w1100: 'w1100';
+$w1050: 'w1050';
+$w1000: 'w1000';
+$w950: 'w950';
+$w900: 'w900';
+$w850: 'w850';
+$w800: 'w800';
+$w750: 'w750';
+$w700: 'w700';
+$w650: 'w650';
+$w600: 'w600';
+$w550: 'w550';
+$w500: 'w500';
+$w450: 'w450';
+$w400: 'w400';
+$w320: 'w320';
+
+// The `$breakpoints` list is used to build our media queries.
+// You can use these in the media-query mixin.
+$breakpoints: (
+  $w1500 '(max-width: 1500px)',
+  $w1100 '(max-width: 1100px)',
+  $w1050 '(max-width: 1050px)',
+  $w1000 '(max-width: 1000px)',
+  $w950 '(max-width: 950px)',
+  $w900 '(max-width: 900px)',
+  $w850 '(max-width: 850px)',
+  $w800 '(max-width: 800px)',
+  $w750 '(max-width: 750px)',
+  $w700 '(max-width: 700px)',
+  $w650 '(max-width: 650px)',
+  $w600 '(max-width: 600px)',
+  $w550 '(max-width: 550px)',
+  $w500 '(max-width: 500px)',
+  $w450 '(max-width: 450px)',
+  $w320 '(min-width: 320px) and (max-width: 400px)',
+); 

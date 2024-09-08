@@ -1,0 +1,77 @@
+.btn {
+	display: flex;
+	align-items: center;
+	padding: 11px 30px 11px 30px;
+	background-color: $secondary-bg-color;
+	color: $alternative-color;
+	border: $main-border;
+	border-radius: $main-border-radius;
+	font-family: $secondary-font;
+	font-weight: 600;
+	font-size: $primary-font-size;
+	line-height: 1.2;
+	text-decoration: none;
+	white-space: nowrap;
+	transition: $transition-duration;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $primary-hover-color;
+		border-color: $primary-hover-color;
+	}
+}
+
+.btn--reset {
+	background-color: transparent;
+	color: inherit;
+	border: none;
+	border-radius: 0;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	cursor: pointer;
+}
+
+.btn--primary {
+	@extend .btn;
+}
+
+.btn--large {
+	padding: 17px 49px 18px;
+	min-width: 220px;
+	text-align: center;
+	justify-content: center;
+	font-size: $font-size-8;
+	font-weight: 700;
+}
+
+.btn--secondary {
+	@extend .btn;
+
+	color: $primary-color;
+	background-color: unset;
+
+	&:hover {
+		color: $primary-hover-color;
+		background-color: unset;
+		border-color: $primary-hover-color;
+	}
+}
+
+/*========
+* Links
+========*/
+.link {
+	color: $primary-color;
+	transition: $transition-duration;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover *{
+		color: $primary-hover-color;
+	}
+}
