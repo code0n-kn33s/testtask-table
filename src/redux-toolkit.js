@@ -12,8 +12,6 @@ export const store = configureStore({
 // }
 
 // store.subscribe(() => {
-// })
-// store.subscribe(() => {
 //     let stored = store.getState();
 //     saveState({
 //       auth: stored.auth,

@@ -2,9 +2,6 @@ import React from "react";
 
 import WrapGoogleMap from "./GoogleMap";
 
-// import Soc from './../common/Soc'
-// import {Telephone, Email} from '../elems/ContactAnimIcons'
-
 const Contacts = () => {
   return (
     <div className="contacts" id="contacts">
