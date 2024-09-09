@@ -19,7 +19,6 @@ export const CardRozborka = (props) => {
     dispatch(deleteRozborka(value));
 
     setTimeout(() => {
-      console.log('setTimeout')
       dispatch(getRozborka());
     }, 500);
   };
