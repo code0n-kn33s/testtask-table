@@ -70,9 +70,6 @@ img[data-sizes] {
   padding: 0 40px;
   margin: 0 auto;
 
-  @include media-query($small) {
-    padding: 0 16px;
-  }
 }
 
 .small-wrapper {
@@ -80,9 +77,7 @@ img[data-sizes] {
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
-  @include media-query($small) {
-    padding: 0 10px;
-  }
+
 }
 
 .medium-wrapper {
@@ -207,9 +202,7 @@ img[data-sizes] {
 	.page__body-wrapper {
     display: flex;
 
-    @include media-query($small) {
-      flex-direction: column;
-    }
+
   }
 
   .header {
@@ -244,10 +237,6 @@ img[data-sizes] {
       height: auto;
       justify-content: space-between;
       align-items: center;
-
-      @include media-query($small) {
-        // justify-content: left;
-      }
     }
 
     .main-header__content {
@@ -330,7 +319,6 @@ img[data-sizes] {
           background-color: $primary-bg-color;
           transform: translate(50%, -25%);
           color: $primary-color;
-          font-size: $font-size-7;
           letter-spacing: -0.02em;
         }
       }
@@ -374,12 +362,6 @@ img[data-sizes] {
       display: flex;
       justify-content: space-between;
 
-      @include media-query($small) {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-      }
-
       .footer__main_telegram_link {
         position: absolute;
         right: 15px;
@@ -391,29 +373,12 @@ img[data-sizes] {
       display: flex;
       flex: 1 1 auto;
       gap: 87px;
-
-      @include media-query($small) {
-        width: 100%;
-        justify-content: center;
-        gap: 40px;
-      }
-
-      @include media-query($extra-small) {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        text-align: center;
-      }
     }
 
     .footer__main-info-logo {
       max-width: 146px;
       max-height: 100px;
       width: 100%;
-
-      @include media-query($extra-small) {
-        padding-top: 100px;
-      }
 
       .logo-link {
         z-index: 1;
@@ -423,8 +388,6 @@ img[data-sizes] {
     .footer__main-links-item {
       display: block;
       margin-bottom: 5px;
-      font-size: $font-size-7;
-      line-height: calc(23px / $font-size-7);
 
       &:first-child {
         // margin-bottom: 13px;
@@ -437,10 +400,6 @@ img[data-sizes] {
       display: flex;
       align-items: flex-end;
       gap: 16px;
-
-      @include media-query($small) {
-        margin-bottom: 20px;
-      }
 
       .link {
         height: fit-content;
