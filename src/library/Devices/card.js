@@ -33,12 +33,12 @@ export const CardElement = (props) => {
   }
 
   const getModelsArr = () => {
-    if (Array.isArray(props.modelId)) { // перевіряємо, чи props.modelId є масивом
+    if (Array.isArray(props.modelId)) { 
       let values = props.models?.filter(moto => props.modelId.includes(String(moto.id)))
       let labels = values?.map(model => model.model).join(', ')
       return <>Моделі: {labels ? labels : ''}</>
     } else {
-      return null; // або інша логіка, яка повідомить користувача про помилку
+      return null; 
     }
   }
   
@@ -51,7 +51,7 @@ export const CardElement = (props) => {
         <StopOutlined onClick={handleDelete(props.id)} key="setting" />,
       ] : false}
 
-      // onTabClick={props.isLoggedIn ? tabClicked : props.sortProducts}
+      
       className={"card-style"}
       cover={
         <CarouselApp
