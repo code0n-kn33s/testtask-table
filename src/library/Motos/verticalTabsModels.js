@@ -22,18 +22,14 @@ const VerticalTabsModels = (props) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    // Функция-обработчик для обновления ширины окна
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
 
-    // Добавляем обработчик события изменения размера окна
     window.addEventListener("resize", handleResize);
 
-    // Устанавливаем начальное значение ширины окна
     setWindowWidth(window.innerWidth);
 
-    // Удаляем обработчик события при размонтировании компонента
     return () => {
       window.removeEventListener("resize", handleResize);
     };

@@ -8,7 +8,7 @@ const Contacts = () => {
       <div className="contacts-container">
         <div className="contacts-title">Контакти</div>
         <div className="contacts-address">
-          м.Київ, вул. Володимира Богдановицького{" "}
+          м.Київ, вул. Володимира Богдановицького
         </div>
         <br/>
       </div>

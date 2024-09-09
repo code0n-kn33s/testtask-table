@@ -34,10 +34,8 @@ export const editDevices = createAsyncThunk(
         param.motoId && formData.append('motoId', param.motoId);
 
         if (Array.isArray(param.modelId)) {
-            // Якщо так, додаємо кожен елемент масиву окремо
             param.modelId.forEach(id => formData.append('modelId', id));
         } else {
-            // Якщо modelId не є масивом, додаємо його як одиночний елемент
             param.modelId && formData.append('modelId', param.modelId);
         }
 

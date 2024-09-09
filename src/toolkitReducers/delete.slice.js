@@ -5,7 +5,6 @@ import moment from 'moment'
 export const deleteTypes = createAsyncThunk(
     'async/deleteTypes',
     async function (param, options) {
-        console.log('param :>> ', param);
         const response = await privateFetch('api/type/?id=' + param, {
             method: "DELETE",
 

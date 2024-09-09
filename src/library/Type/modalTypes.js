@@ -5,10 +5,6 @@ import { FormOutlined } from '@ant-design/icons';
 import { addTypes, editTypes, getTypes } from '../../toolkitReducers'
 import { useDispatch, useSelector } from 'react-redux';
 
-// loading
-// fullfilled
-// rejected
-
 export const ModalTypes = (props) => {
     const { isOpen, setModalOpen, modalContent, isNew, editValueTab, setValueTab, setIsNew } = props
 

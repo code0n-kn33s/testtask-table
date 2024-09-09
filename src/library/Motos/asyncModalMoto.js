@@ -5,10 +5,6 @@ import { FormOutlined } from '@ant-design/icons';
 import { addMotos, editMotos, getMotos } from '../../toolkitReducers'
 import { useDispatch, useSelector } from 'react-redux';
 
-// loading
-// fullfilled
-// rejected
-
 export const AsyncModalMoto = (props) => {
     const { isOpen, setModalOpen, modalContent, isNew, editValueTab, setValueTab, setIsNew } = props
     const fetching = useSelector(state => {
@@ -132,10 +128,6 @@ export const AsyncModalMoto = (props) => {
                         </div>
                     }
                 </div>
-                {/* <Tooltip title="search">
-                    <Button type="dashed" onClick={buttonCancel} shape="circle" icon={<StopOutlined />} />
-                    <Button type="dashed" onClick={buttonDone} shape="circle" icon={<CheckOutlined />} />
-                </Tooltip> */}
 
             </Modal>
         </>
