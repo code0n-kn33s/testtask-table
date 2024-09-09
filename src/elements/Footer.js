@@ -29,8 +29,8 @@ export default function Main(params) {
 
             <span  className="footer-year">&#169;2024</span>
             <div className="footer-contacts">
-                <div className="footer-contacts-item">Сергій <a href="+380934880488"> +38(093)488-04-88</a></div>
-                <div className="footer-contacts-item">Максим <a href="+380634545554"> +38(063)454-55-54</a></div>
+                <div className="footer-contacts-item">+3809912331222</div>
+                <div className="footer-contacts-item">+3809912331222</div>
             </div>
 
         </div>
